@@ -1,0 +1,171 @@
+@charaset "UTF-8";
+
+html {
+  font-size: 85%;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", monospace, sans-serif;
+  text-align: left;
+  color: #6272a4;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: white;
+  text-decoration: none;
+}
+
+
+.App {
+  display: -webkit-flex;
+  display: flex;
+  height: 100vh;
+  background-color: #212529;
+}
+
+
+
+/* .App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.header {
+  color: aqua;
+  font-weight: normal;
+  text-align: center;
+}
+
+.navi {
+  display: block;
+  position: relative;
+  background-color: #44475a;
+  height: 100%;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.navi ul {
+  display: inline-box;
+  list-style: none;
+  padding-left: 10px;
+  margin-top: 30px;
+}
+
+.navi li {
+  margin: 12px 0;
+}
+
+.logo {
+  position: absolute;
+  bottom: 70px;
+  left: 12%;
+  /* background-color: white; */
+  width: 100px;
+  height: 30px;
+}
+
+.sns {
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  /* background-color: white; */
+  width: 100%;
+  height: 20px;
+  padding: 0 3px;
+}
+
+.icon {
+  display: inline-block;
+  background-color: blue;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin: 0 3px;
+}
+
+.reddit {
+  -webkit-flex: 2;
+  flex:2;
+  /* background-color: yellow; */
+  height: 100%;
+  /* width: 20%; */
+}
+
+.javascript {
+  -webkit-flex: 5;
+  flex:5;
+  /* background-color: blue; */
+  height: 100%;
+}
+
+.time {
+  color: #6272a4;
+  text-align: center;
+  /* font-size: 120px;
+  font-weight: 400px; */
+}
+
+.github {
+  -webkit-flex: 2;
+  flex:2;
+  /* background-color: pink; */
+  height: 100%;
+}
+
+
+.adv {
+  background-color: white;
+  width: 100%;
+  height: 20%;
+  vertical-align: bottom;
+}
+
+/* Reddit */
+
+.reddit-wrapper {
+  height: 90%;
+  overflow: scroll;
+}
+
+.reddit-entry {
+  margin: 20px 10px;
+  padding: 5px;
+  border-left: 3px solid #44475a;
+}
+
+.reddit-entry p {
+  margin: 5px 0;
+}
+
+.reddit-wrapper::-webkit-scrollbar { width: 0 !important }
