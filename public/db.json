@@ -29,5 +29,67 @@
 			"author": "u/JeffyLew77",
 			"score": 2
 		}
+	],
+
+	"javascript": [{
+			"id": 1,
+			"title": "Async/Await Issue? Scope Issue? : javascript",
+			"date": "a day ago"
+		},
+		{
+			"id": 2,
+			"title": "JavaScript's for loop is surprisingly fast",
+			"date": "a day ago"
+		},
+		{
+			"id": 3,
+			"title": "Javascript: Understanding async/await – TechShots – Medium",
+			"date": "a day ago"
+		},
+		{
+			"id": 4,
+			"title": "Convert String to Array with JavaScript's String split Method",
+			"date": "3 days ago"
+		},
+		{
+			"id": 5,
+			"title": "javascriptでJSONデータを扱う(登録・参照・更新・削除) - Qiita",
+			"date": "4 days ago"
+		},
+		{
+			"id": 6,
+			"title": "JSON.parse() - JavaScript | MDN",
+			"date": "5 days ago"
+		},
+		{
+			"id": 7,
+			"title": "Array.prototype.map() - JavaScript | MDN",
+			"date": "6 days ago"
+		},
+		{
+			"id": 8,
+			"title": "Date.prototype.toLocaleString() - JavaScript | MDN",
+			"date": "7 days ago"
+		}
+	],
+
+	"issues": [{
+			"id": 1,
+			"repo": "jupyter/notebook",
+			"number": 3278,
+			"title": "Images in Markdown not showing when uploaded to Git"
+		},
+		{
+			"id": 2,
+			"repo": "gitname/react-gh-pages",
+			"number": 3,
+			"title": "Code is deployed but page is blank"
+		},
+		{
+			"id": 3,
+			"repo": "LLK/scratch-gui",
+			"number": 4328,
+			"title": "npm install error unexpected end of JSON input while parsing near"
+		}
 	]
 }

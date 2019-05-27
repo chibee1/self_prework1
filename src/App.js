@@ -4,6 +4,8 @@ import './App.css';
 import Clock from './Clock.js';
 import Message from './Message.js';
 import Reddit from './Reddit.js';
+import JavaScript from './JavaScript.js';
+import Issues from './Issues.js';
 
 class App extends React.Component {
   // constructor(props) {
@@ -34,20 +36,17 @@ class App extends React.Component {
         </section>
 
         <section className="reddit">
-          <h3 className="header">POPULAR ON R/JAVASCRIPT</h3>
           <Reddit/>
         </section>
 
         <section className="javascript">
-          <h3 className="header">RELEVANT JAVASCRIPT HISTORY</h3>
-          <div className="time">
+          <JavaScript/>
           <Clock/>
-          </div>
           <Message/>
         </section>
 
         <section className="github">
-          <h3 className="header">GITHUB ISSUES HISTORY</h3>
+          <Issues />
         <div className="adv">
         </div>
         </section>

@@ -2,7 +2,7 @@
   "name": "self_prework",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chibee1.github.io/self_prework",
+  "homepage": "http://chibee1.github.io/self_prework1",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -32,6 +32,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "json-server": "^0.15.0"
   }
 }
