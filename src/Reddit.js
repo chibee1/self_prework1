@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 
 class Reddit extends React.Component {
   constructor(props){
@@ -25,15 +26,16 @@ class Reddit extends React.Component {
 
   render() {
     return (
-      <div class="reddit-wrapper">
-        {this.state.news.map( news => (
-              <div class="reddit-entry" key={news.id}>
-                <p>{news.title}</p>
-                <p>Posted by: {news.author}</p>
-                <p>Reddit score: {news.score}</p>
-                <p>Link to Comments</p>
-              </div>
-          ))}
+      <div className="reddit-wrapper">
+        <h3 className="header">POPULAR ON R/JAVASCRIPT</h3>
+          {this.state.news.map( news => (
+                <div className="reddit-entry" key={news.id}>
+                  <p>{news.title}</p>
+                  <p>Posted by: {news.author}</p>
+                  <p>Reddit score: {news.score}</p>
+                  <p>Link to Comments</p>
+                </div>
+            ))}
       </div>
     );
   }

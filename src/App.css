@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: "Hiragino Kaku Gothic ProN", monospace, sans-serif;
+  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
   text-align: left;
   color: #6272a4;
 }
@@ -60,7 +60,7 @@ a:link, a:visited, a:hover, a:active {
 } */
 
 .header {
-  color: aqua;
+  color: #99FFFF;
   font-weight: normal;
   text-align: center;
 }
@@ -120,20 +120,36 @@ a:link, a:visited, a:hover, a:active {
   /* background-color: yellow; */
   height: 100%;
   /* width: 20%; */
+  padding: 0 10px 0;
 }
 
 .javascript {
-  -webkit-flex: 5;
+  -webkit-flex: 4.5;
   flex:5;
   /* background-color: blue; */
   height: 100%;
+  padding: 0 10px 0;
+}
+
+.clock {
+  height: 35%;
 }
 
 .time {
   color: #6272a4;
   text-align: center;
-  /* font-size: 120px;
-  font-weight: 400px; */
+  font-size: 120px;
+  margin: 0;
+}
+
+.date {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.message {
+  height: 10%;
 }
 
 .github {
@@ -141,6 +157,7 @@ a:link, a:visited, a:hover, a:active {
   flex:2;
   /* background-color: pink; */
   height: 100%;
+  padding: 0 10px 0;
 }
 
 
@@ -148,18 +165,17 @@ a:link, a:visited, a:hover, a:active {
   background-color: white;
   width: 100%;
   height: 20%;
-  vertical-align: bottom;
 }
 
 /* Reddit */
 
 .reddit-wrapper {
-  height: 90%;
+  height: 100%;
   overflow: scroll;
 }
 
 .reddit-entry {
-  margin: 20px 10px;
+  margin: 20px 10px 0 0;
   padding: 5px;
   border-left: 3px solid #44475a;
 }
@@ -168,4 +184,61 @@ a:link, a:visited, a:hover, a:active {
   margin: 5px 0;
 }
 
+.reddit-entry:hover {
+  border-left: 3px solid #00FF00;
+  cursor: pointer;
+}
+
 .reddit-wrapper::-webkit-scrollbar { width: 0 !important }
+
+/* JavaScript */
+
+.js-wrapper {
+  height: 45%;
+  overflow: scroll;
+  border-bottom: 1px solid #44475a;
+  /* margin: 20px; */
+}
+.
+.js-entry {
+  margin: 20px 0px;
+  padding: 10px;
+}
+
+.js-entry:hover {
+  cursor: pointer;
+  color: #FFFF99;
+}
+
+.js-entry span {
+  float: right;
+}
+
+.js-wrapper::-webkit-scrollbar { width: 0 !important }
+
+/* Issues */
+
+.switch {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.switch a {
+  margin: 10px;
+}
+
+.issues-wrapper {
+  height: 70%;
+  overflow: scroll;
+  /* margin: 20px; */
+  border-bottom: 1px solid #44475a;
+  margin-bottom: 20px;
+}
+.
+.issues-entry {
+  margin: 20px 10px;
+  padding: 5px;
+  border-left: 3px solid #44475a;
+}
+
+.issues-wrapper::-webkit-scrollbar { width: 0 !important }

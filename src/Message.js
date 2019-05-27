@@ -21,7 +21,7 @@ class Message extends React.Component {
 
   render() {
     return (
-      <div>
+      <div class="message">
         <p>{this.state.alert}</p>
         <a href="#" onClick={() => this.delete()}>{this.state.clicker}</a>
       </div>
