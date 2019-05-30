@@ -28,10 +28,10 @@ class App extends React.Component {
             <li><a href="#">PLAYGROUND</a></li>
             <li><a href="#">HELP/INTRO</a></li>
           </ul>
-          <a href="http://initab.com/"><img className="logo" src="../img/initab_logo_white.png"/></a>
+          <a href="http://initab.com/"><img className="logo" src="../public/img/initab_logo_white.png"/></a>
           <div className="sns">
             <a href="#"><img className="icon" src="../public/img/fb.png"/></a>
-            <a href="https://github.com/chibee1"><img className="icon" src="../img/github.png"/></a>
+            <a href="https://github.com/chibee1"><img className="icon" src="../public/img/github.png"/></a>
           </div>
         </section>
 
