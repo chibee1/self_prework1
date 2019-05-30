@@ -30,7 +30,7 @@ class App extends React.Component {
           </ul>
           <a href="http://initab.com/"><img className="logo" src="../img/initab_logo_white.png"/></a>
           <div className="sns">
-            <a href="#"><img className="icon" src="https://chibee1.github.io/self_prework1/img/fb.png"/></a>
+            <a href="#"><img className="icon" src="../public/img/fb.png"/></a>
             <a href="https://github.com/chibee1"><img className="icon" src="../img/github.png"/></a>
           </div>
         </section>
