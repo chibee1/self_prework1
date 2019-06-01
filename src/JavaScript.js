@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import axios from 'axios';
 
 class JavaScript extends React.Component {
   constructor(props){
@@ -9,20 +10,10 @@ class JavaScript extends React.Component {
     };
   }
 
-  componentWillMount(){
-    this.fetchResponse();
-  }
-
-  fetchResponse(){
-    fetch('http://localhost:3001/javascript')
-    .then( res => res.json() )
-    .then( res => {
-      console.log(res);
-      this.setState({
-        javascript : res
-      });
-    })
-  }
+  componentDidMount() {
+      axios.get("db.json")
+        .then(res => this.setState({ javascript: res.data.javascript }));
+    }
 
   render() {
     return (
