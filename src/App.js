@@ -6,32 +6,27 @@ import Message from './Message.js';
 import Reddit from './Reddit.js';
 import JavaScript from './JavaScript.js';
 import Issues from './Issues.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWrench, faCode, faBook, faChartLine, faPencilAlt, faLightbulb, faQuestion } from '@fortawesome/free-solid-svg-icons'
 
 class App extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     time: 23
-  //   };
-  // }
-
   render() {
     return (
       <div className="App">
         <section className="navi">
           <ul>
-            <li><a href="#">SETTINGS</a></li>
-            <li><a href="#">GISTS</a></li>
-            <li><a href="#">STACK OVERFLOW</a></li>
-            <li><a href="#">TRENDING</a></li>
-            <li><a href="#">SCRATCH PAD</a></li>
-            <li><a href="#">PLAYGROUND</a></li>
-            <li><a href="#">HELP/INTRO</a></li>
+            <li><a href="#"><div className="nav-icon-box"><FontAwesomeIcon className="nav-icon" icon={faWrench} /></div>SETTINGS</a></li>
+            <li><a href="#"><div className="nav-icon-box"><FontAwesomeIcon className="nav-icon" icon={faCode} /></div>GISTS</a></li>
+            <li><a href="#"><div className="nav-icon-box"><FontAwesomeIcon className="nav-icon" icon={faBook} /></div>STACK OVERFLOW</a></li>
+            <li><a href="#"><div className="nav-icon-box"><FontAwesomeIcon className="nav-icon" icon={faChartLine} /></div>TRENDING</a></li>
+            <li><a href="#"><div className="nav-icon-box"><FontAwesomeIcon className="nav-icon" icon={faPencilAlt} /></div>SCRATCH PAD</a></li>
+            <li><a href="#"><div className="nav-icon-box"><FontAwesomeIcon className="nav-icon" icon={faLightbulb} /></div>PLAYGROUND</a></li>
+            <li><a href="#"><div className="nav-icon-box"><FontAwesomeIcon className="nav-icon" icon={faQuestion} /></div>HELP/INTRO</a></li>
           </ul>
-          <a href="http://initab.com/"><img className="logo" src="../public/img/initab_logo_white.png"/></a>
+          <a href="http://initab.com/"><img className="logo" src="./img/initab_logo_white.png"/></a>
           <div className="sns">
-            <a href="#"><img className="icon" src="../public/img/fb.png"/></a>
-            <a href="https://github.com/chibee1"><img className="icon" src="../public/img/github.png"/></a>
+            <a href="#"><img className="icon" src="./img/fb.png"/></a>
+            <a href="https://github.com/chibee1"><img className="icon" src="./img/github.png"/></a>
           </div>
         </section>
 

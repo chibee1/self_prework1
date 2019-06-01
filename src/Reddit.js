@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import axios from 'axios';
 
 class Reddit extends React.Component {
   constructor(props){
@@ -9,26 +10,16 @@ class Reddit extends React.Component {
     };
   }
 
-  componentWillMount(){
-    this.fetchResponse();
-  }
-
-  fetchResponse(){
-    fetch('http://localhost:3001/news')
-    .then( res => res.json() )
-    .then( res => {
-      console.log(res);
-      this.setState({
-        news : res
-      });
-    })
-  }
+  componentDidMount() {
+      axios.get("db.json")
+        .then(res => this.setState({ news: res.data.news }));
+    }
 
   render() {
     return (
       <div className="reddit-wrapper">
         <h3 className="header">POPULAR ON R/JAVASCRIPT</h3>
-          {this.state.news.map( news => (
+          {this.state.news.map( news =>  (
                 <div className="reddit-entry" key={news.id}>
                   <p>{news.title}</p>
                   <p>Posted by: {news.author}</p>
